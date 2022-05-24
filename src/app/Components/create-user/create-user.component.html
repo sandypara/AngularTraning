@@ -3,7 +3,8 @@
 Name:
 </div>
 <div class="col">
-    <input type="text" >
+    {{name}}
+    <!-- <input type="text" > -->
 </div>
 </div>
 <div class="row">
@@ -11,9 +12,10 @@ Name:
     PhoneNo:
 </div>
 <div class="col">
-    <input type="text" >
+    <input [(ngModel)]="Phone"  type="text" >
 </div>
 </div>
+{{Phone}}
 <div>
-    <input type="button" value="Save"/>
+    <input type="button" (click)="savemyform();"  value="Save"/>
 </div>
